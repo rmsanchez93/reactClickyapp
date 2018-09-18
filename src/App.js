@@ -46,12 +46,15 @@ class App extends Component {
   render() {
     return (
       <div className = 'container'>
-      <Navbar/>
+      <Navbar 
+      currentScore={this.state.currentScore}
+        highScore={this.state.newScore}
+      />
       <Jumbotron/>
       
         
       {this.shuffle(this.state._).map(image =>(
-        <Clicky image= {image.image} onClick = {this.handleScore}/>
+        <Clicky image= {image.image} />
       ))}
      
       </div>
