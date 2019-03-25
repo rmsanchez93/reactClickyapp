@@ -53,6 +53,7 @@ resetGame = () => {
   this.setState({
     _, //include array of guitars
     currentScore: 0,
+    clicked: []
   })
   this.shuffle(this.state._);
 }
