@@ -2,16 +2,16 @@
   "name": "clicky-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rmsanchez93.github.io/reactClickyapp",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
   },
+  "homepage": "https://rmsanchez93.github.io/reactClickyapp",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
